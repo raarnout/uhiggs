@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Set ECMAScript target version
+    "module": "ESNext", // Set module code generation
+    "jsx": "react-jsx", // Use the new JSX transform
+    "strict": true, // Enable strict type-checking options
+    "moduleResolution": "node", // Use Node.js module resolution
+    "esModuleInterop": true, // Allow default imports from modules with no default export
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file name casing
+    "rootDir": "src/"
+  },
+  "include": ["src"], // Include all files in the 'src' directory
+  "exclude": ["node_modules", "dist"] // Exclude 'node_modules' and 'dist' directories
+}
