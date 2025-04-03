@@ -55,6 +55,13 @@ const meta: Meta<typeof Button> = {
       defaultValue: false,
     }
   },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Deze knop toont een icoon aan het begin én aan het einde van de knoptekst.',
+      },
+    },
+  },
 };
 
 export default meta;
