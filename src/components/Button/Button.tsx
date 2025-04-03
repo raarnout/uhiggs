@@ -9,6 +9,8 @@ export const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size,
   outline = false,
+  disabled = false,
+  block = false,
   square = false,
   pill = false,
   shadow = false,
@@ -21,7 +23,8 @@ export const Button: React.FC<ButtonProps> = ({
     size ? `btn-${size}` : '',
     square ? styles['btn-square'] : '',
     pill ? styles['btn-pill'] : '',
-    shadow ? styles['btn-shadowed'] : '',
+    shadow ? styles['btn-shadowed'] : '', 
+    block ? `w-100 d-block` : '',
     className
   );
 
@@ -29,6 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
     <button 
       className={btnClass} 
       onClick={onClick} 
+      disabled={disabled}
       {...props}
     >
       {children}

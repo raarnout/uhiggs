@@ -22,10 +22,11 @@ const meta: Meta<typeof Button> = {
     },
     size: {
       control: { type: 'radio' },
-      options: [undefined, 'sm', 'lg'], 
+      defaultValue: 'md',
+      options: ['sm', 'md', 'lg'], 
       labels: {
         sm: 'Small',
-        undefined: 'default',
+        md: 'Medium',
         lg: 'Large'
       }
     },
@@ -44,6 +45,14 @@ const meta: Meta<typeof Button> = {
     shadow: {
       control: { type: 'boolean' },
       defaultValue: false,
+    },
+    disabled: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+    },
+    block: {
+      control: { type: 'boolean' },
+      defaultValue: false,
     }
   },
 };
@@ -53,12 +62,15 @@ type Story = StoryObj<typeof Button>;
 
 export const button: Story = {
   args: {
-    children: 'Primary Button',
+    children: 'Button',
     variant: 'primary',
+    size: 'md',
     outline: false,
+    disabled: false,
     square: false,
     pill: false,
-    shadow: false
+    shadow: false,
+    block: false,
   },
 };
 

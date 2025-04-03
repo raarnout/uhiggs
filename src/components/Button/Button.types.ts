@@ -11,23 +11,29 @@ export type BootstrapVariant =
   | 'dark'
   | 'link';
 
-export type BootstrapSize = 'sm' | 'lg';
+export type BootstrapSize = 'sm' | 'md' | 'lg';
 
 export type BootstrapOutline = true | false;
 
-export type BootstrapSquare = true | false;
+export type BootstrapDisabled = true | false;
 
-export type BootstrapPill = true | false;
+export type BootstrapBlock = true | false;
 
-export type BootstrapShadow = true | false;
+export type Square = true | false;
+
+export type Pill = true | false;
+
+export type Shadow = true | false;
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: BootstrapVariant;
   size?: BootstrapSize;
   outline?: BootstrapOutline;
-  square?: BootstrapSquare;
-  pill?: BootstrapPill;
-  shadow?: BootstrapShadow;
+  disabled?: BootstrapDisabled;
+  block?: BootstrapBlock;
+  square?: Square;
+  pill?: Pill;
+  shadow?: Shadow;
   className?: string;
 }
