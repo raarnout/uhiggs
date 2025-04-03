@@ -1,5 +1,5 @@
 {
-  "name": "UHiggs",
+  "name": "uhiggs",
   "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -8,7 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +25,15 @@
     "rollup": "^4.39.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-onboarding": "^8.6.12",
+    "@storybook/blocks": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@storybook/test": "^8.6.12",
+    "storybook": "^8.6.12"
   }
 }
