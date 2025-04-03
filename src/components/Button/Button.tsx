@@ -1,11 +1,28 @@
 import React from 'react';
+import classNames from 'classnames';
 import { ButtonProps } from './Button.types';
 
-export const Button: React.FC<ButtonProps> = ({ children, onClick, variant = 'primary' }) => {
+export const Button: React.FC<ButtonProps> = ({
+  children,
+  onClick,
+  variant = 'primary',
+  size,
+  outline,
+  className,
+  ...props
+}) => {
+  const btnClass = classNames(
+    'btn',
+    outline ? `btn-outline-${variant}` : `btn-${variant}`,
+    size ? `btn-${size}` : '',
+    className
+  );
+
   return (
-    <button
-      onClick={onClick}
-      className={`btn btn-${variant}`}
+    <button 
+      className={btnClass} 
+      onClick={onClick} 
+      {...props}
     >
       {children}
     </button>

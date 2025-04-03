@@ -9,24 +9,41 @@ const meta: Meta<typeof Button> = {
     onClick: { action: 'clicked' },
     variant: {
       control: { type: 'radio' },
-      options: ['primary', 'secondary'],
+      options: ['primary',
+        'secondary',
+        'success',
+        'danger',
+        'warning',
+        'info',
+        'light',
+        'dark',
+        'link'
+      ]
     },
+    size: {
+      control: { type: 'radio' },
+      options: [undefined, 'sm', 'lg'], 
+      labels: {
+        sm: 'Small',
+        undefined: 'default',
+        lg: 'Large'
+      }
+    },
+    outline: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+    }
   },
 };
 
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
+export const Btn: Story = {
   args: {
     children: 'Primary Button',
     variant: 'primary',
+    outline: false
   },
 };
 
-export const Secondary: Story = {
-  args: {
-    children: 'Secondary Button',
-    variant: 'secondary',
-  },
-};

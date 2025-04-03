@@ -16,12 +16,14 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
+    "bootstrap": "^5.3.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "dependencies": {
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
+    "classnames": "^2.5.1",
     "rollup": "^4.39.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.8.2"
@@ -34,6 +36,7 @@
     "@storybook/react": "^8.6.12",
     "@storybook/react-vite": "^8.6.12",
     "@storybook/test": "^8.6.12",
+    "bootstrap": "^5.3.4",
     "storybook": "^8.6.12"
   }
 }
