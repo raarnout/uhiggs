@@ -14,6 +14,8 @@ export const Button: React.FC<ButtonProps> = ({
   square = false,
   pill = false,
   shadow = false,
+  iconStart,
+  iconEnd,
   className,
   ...props
 }) => {
@@ -25,6 +27,7 @@ export const Button: React.FC<ButtonProps> = ({
     pill ? styles['btn-pill'] : '',
     shadow ? styles['btn-shadowed'] : '', 
     block ? `w-100 d-block` : '',
+    iconStart || iconEnd ? styles['btn-icon-wrapper'] : '',
     className
   );
 
@@ -35,7 +38,9 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       {...props}
     >
+      {iconStart && <i className={`bi bi-${iconStart} ${styles['btn-icon']}`} aria-hidden="true" />}
       {children}
+      {iconEnd && <i className={`bi bi-${iconEnd} ${styles['btn-icon']}`} aria-hidden="true" />}
     </button>
   );
 };

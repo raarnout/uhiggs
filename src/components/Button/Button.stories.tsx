@@ -71,6 +71,8 @@ export const button: Story = {
     pill: false,
     shadow: false,
     block: false,
+    iconStart: 'cloud-download',
+    iconEnd: 'arrow-right',
   },
 };
 

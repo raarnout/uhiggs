@@ -35,5 +35,7 @@ export interface ButtonProps
   square?: Square;
   pill?: Pill;
   shadow?: Shadow;
+  iconStart?: string;
+  iconEnd?: string;
   className?: string;
 }
