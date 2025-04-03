@@ -32,6 +32,14 @@ const meta: Meta<typeof Button> = {
     outline: {
       control: { type: 'boolean' },
       defaultValue: false,
+    },
+    square: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+    },
+    pill: {
+      control: { type: 'boolean' },
+      defaultValue: false,
     }
   },
 };
@@ -43,7 +51,9 @@ export const Btn: Story = {
   args: {
     children: 'Primary Button',
     variant: 'primary',
-    outline: false
+    outline: false,
+    square: false,
+    pill: false
   },
 };
 
