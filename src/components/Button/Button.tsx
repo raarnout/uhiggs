@@ -11,6 +11,7 @@ export const Button: React.FC<ButtonProps> = ({
   outline = false,
   square = false,
   pill = false,
+  shadow = false,
   className,
   ...props
 }) => {
@@ -20,6 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
     size ? `btn-${size}` : '',
     square ? styles['btn-square'] : '',
     pill ? styles['btn-pill'] : '',
+    shadow ? styles['btn-shadowed'] : '',
     className
   );
 

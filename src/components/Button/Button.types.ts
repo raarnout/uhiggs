@@ -19,6 +19,8 @@ export type BootstrapSquare = true | false;
 
 export type BootstrapPill = true | false;
 
+export type BootstrapShadow = true | false;
+
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: BootstrapVariant;
@@ -26,5 +28,6 @@ export interface ButtonProps
   outline?: BootstrapOutline;
   square?: BootstrapSquare;
   pill?: BootstrapPill;
+  shadow?: BootstrapShadow;
   className?: string;
 }

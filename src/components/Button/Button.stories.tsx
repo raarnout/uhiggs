@@ -40,6 +40,10 @@ const meta: Meta<typeof Button> = {
     pill: {
       control: { type: 'boolean' },
       defaultValue: false,
+    },
+    shadow: {
+      control: { type: 'boolean' },
+      defaultValue: false,
     }
   },
 };
@@ -47,13 +51,14 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Btn: Story = {
+export const button: Story = {
   args: {
     children: 'Primary Button',
     variant: 'primary',
     outline: false,
     square: false,
-    pill: false
+    pill: false,
+    shadow: false
   },
 };
 
