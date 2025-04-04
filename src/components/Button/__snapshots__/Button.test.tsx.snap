@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component matches snapshot 1`] = `
+exports[`Button snapshot matches snapshot 1`] = `
 <div>
   <button
     class="btn btn-primary btn-lg btn-square btn-shadowed btn-icon-wrapper"
