@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "format": "prettier --write \"src/**/*.{ts,tsx,scss}\""
   },
   "keywords": [],
   "author": "",
@@ -39,6 +40,7 @@
     "@storybook/test": "^8.6.12",
     "bootstrap": "^5.3.4",
     "bootstrap-icons": "^1.11.3",
+    "prettier": "^3.5.3",
     "sass": "^1.86.2",
     "storybook": "^8.6.12"
   }

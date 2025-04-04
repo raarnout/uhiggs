@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { ButtonProps } from './Button.types';
-import styles from './Button.module.scss'; 
+import styles from './Button.module.scss';
 
 /**
 The Button component is a flexible, reusable interface element built on top of Bootstrap 5. It enhances the standard Bootstrap button with custom styling options, icon support, and improved interaction design, making it ideal for modern React applications.
@@ -37,19 +37,14 @@ export const Button: React.FC<ButtonProps> = ({
     size ? `btn-${size}` : '',
     square ? styles['btn-square'] : '',
     pill ? styles['btn-pill'] : '',
-    shadow ? styles['btn-shadowed'] : '', 
+    shadow ? styles['btn-shadowed'] : '',
     block ? `w-100 d-block` : '',
     iconStart || iconEnd ? styles['btn-icon-wrapper'] : '',
     className
   );
 
   return (
-    <button 
-      className={btnClass} 
-      onClick={onClick} 
-      disabled={disabled}
-      {...props}
-    >
+    <button className={btnClass} onClick={onClick} disabled={disabled} {...props}>
       {iconStart && <i className={`bi bi-${iconStart} ${styles['btn-icon']}`} aria-hidden="true" />}
       {children}
       {iconEnd && <i className={`bi bi-${iconEnd} ${styles['btn-icon']}`} aria-hidden="true" />}

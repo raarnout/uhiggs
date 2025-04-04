@@ -25,8 +25,7 @@ export type Pill = true | false;
 
 export type Shadow = true | false;
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: BootstrapVariant;
   size?: BootstrapSize;
   outline?: BootstrapOutline;
