@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component matches snapshot 1`] = `
+<div>
+  <button
+    class="btn btn-primary btn-lg btn-square btn-shadowed btn-icon-wrapper"
+  >
+    <i
+      aria-hidden="true"
+      class="bi bi-check btn-icon"
+    />
+    Snapshot Button
+    <i
+      aria-hidden="true"
+      class="bi bi-arrow-right btn-icon"
+    />
+  </button>
+</div>
+`;

@@ -68,4 +68,23 @@ describe('Button component', () => {
     render(<Button className="custom-class">Styled</Button>);
     expect(screen.getByRole('button')).toHaveClass('custom-class');
   });
+
+  test('matches snapshot', () => {
+    const { container } = render(
+      <Button
+        variant="primary"
+        size="lg"
+        shadow={true}
+        square={true}   
+        iconStart="check"
+        iconEnd="arrow-right"
+      >
+        Snapshot Button
+      </Button>
+    );
+  
+    expect(container).toMatchSnapshot();
+  });
 });
+
+
