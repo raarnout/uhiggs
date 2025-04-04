@@ -80,7 +80,7 @@ export const Default: Story = {
 export const ButtonSizes: Story = {
   render: () => (
     <div style={{
-      display: 'block'     // voorkomt dat knoppen oprekken
+      display: 'block' 
     }}>
       <Button size="sm" className="m-2">Small</Button>
       <Button size="md" className="m-2">Normal</Button>
@@ -92,9 +92,10 @@ export const ButtonSizes: Story = {
   },
 };
 
-export const AllVariants: Story = {
+export const ButtonVariants: Story = {
   render: () => (
-    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+    <div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
       <Button variant="primary">Primary</Button>
       <Button variant="secondary">Secondary</Button>
       <Button variant="success">Success</Button>
@@ -105,6 +106,18 @@ export const AllVariants: Story = {
       <Button variant="dark">Dark</Button>
       <Button variant="link">Link</Button>
     </div>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <Button variant="primary" disabled={true}>Primary</Button>
+        <Button variant="secondary" disabled={true}>Secondary</Button>
+        <Button variant="success" disabled={true}>Success</Button>
+        <Button variant="danger" disabled={true}>Danger</Button>
+        <Button variant="warning" disabled={true}>Warning</Button>
+        <Button variant="info" disabled={true}>Info</Button>
+        <Button variant="light" disabled={true}>Light</Button>
+        <Button variant="dark" disabled={true}>Dark</Button>
+        <Button variant="link" disabled={true}>Link</Button>
+      </div>
+      </div>
   ),
   parameters: {
     controls: { disable: true }
@@ -113,7 +126,8 @@ export const AllVariants: Story = {
 
 export const OutlineButtons: Story = {
   render: () => (
-    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+    <div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
       <Button variant="primary" outline={true}>Primary</Button>
       <Button variant="secondary" outline={true}>Secondary</Button>
       <Button variant="success" outline={true}>Success</Button>
@@ -124,6 +138,18 @@ export const OutlineButtons: Story = {
       <Button variant="dark" outline={true}>Dark</Button>
       <Button variant="link" outline={true}>Link</Button>
     </div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+      <Button variant="primary" outline={true} disabled={true}>Primary</Button>
+      <Button variant="secondary" outline={true} disabled={true}>Secondary</Button>
+      <Button variant="success" outline={true} disabled={true}>Success</Button>
+      <Button variant="danger" outline={true} disabled={true}>Danger</Button>
+      <Button variant="warning" outline={true} disabled={true}>Warning</Button>
+      <Button variant="info" outline={true} disabled={true}>Info</Button>
+      <Button variant="light" outline={true} disabled={true}>Light</Button>
+      <Button variant="dark" outline={true} disabled={true}>Dark</Button>
+      <Button variant="link" outline={true} disabled={true}>Link</Button>
+    </div>
+    </div>
   ),
   parameters: {
     controls: { disable: true }
@@ -132,7 +158,8 @@ export const OutlineButtons: Story = {
 
 export const PillButtons: Story = {
   render: () => (
-    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+    <div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
       <Button variant="primary" pill={true}>Primary</Button>
       <Button variant="secondary" pill={true}>Secondary</Button>
       <Button variant="success" pill={true}>Success</Button>
@@ -143,6 +170,18 @@ export const PillButtons: Story = {
       <Button variant="dark" pill={true}>Dark</Button>
       <Button variant="link" pill={true}>Link</Button>
     </div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+      <Button variant="primary" pill={true} disabled={true}>Primary</Button>
+      <Button variant="secondary" pill={true} disabled={true}>Secondary</Button>
+      <Button variant="success" pill={true} disabled={true}>Success</Button>
+      <Button variant="danger" pill={true} disabled={true}>Danger</Button>
+      <Button variant="warning" pill={true} disabled={true}>Warning</Button>
+      <Button variant="info" pill={true} disabled={true}>Info</Button>
+      <Button variant="light" pill={true} disabled={true}>Light</Button>
+      <Button variant="dark" pill={true} disabled={true}>Dark</Button>
+      <Button variant="link" pill={true} disabled={true}>Link</Button>
+    </div>
+    </div>
   ),
   parameters: {
     controls: { disable: true }
@@ -151,7 +190,8 @@ export const PillButtons: Story = {
 
 export const SquareButtons: Story = {
   render: () => (
-    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+    <div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
       <Button variant="primary" square={true}>Primary</Button>
       <Button variant="secondary" square={true}>Secondary</Button>
       <Button variant="success" square={true}>Success</Button>
@@ -162,6 +202,18 @@ export const SquareButtons: Story = {
       <Button variant="dark" square={true}>Dark</Button>
       <Button variant="link" square={true}>Link</Button>
     </div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+      <Button variant="primary" square={true} disabled={true}>Primary</Button>
+      <Button variant="secondary" square={true} disabled={true}>Secondary</Button>
+      <Button variant="success" square={true} disabled={true}>Success</Button>
+      <Button variant="danger" square={true} disabled={true}>Danger</Button>
+      <Button variant="warning" square={true} disabled={true}>Warning</Button>
+      <Button variant="info" square={true} disabled={true}>Info</Button>
+      <Button variant="light" square={true} disabled={true}>Light</Button>
+      <Button variant="dark" square={true} disabled={true}>Dark</Button>
+      <Button variant="link" square={true} disabled={true}>Link</Button>
+    </div>  
+    </div>
   ),
   parameters: {
     controls: { disable: true }
@@ -170,7 +222,8 @@ export const SquareButtons: Story = {
 
 export const ShadowedButtons: Story = {
   render: () => (
-    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+    <div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
       <Button variant="primary" shadow={true}>Primary</Button>
       <Button variant="secondary" shadow={true}>Secondary</Button>
       <Button variant="success" shadow={true}>Success</Button>
@@ -180,6 +233,18 @@ export const ShadowedButtons: Story = {
       <Button variant="light" shadow={true}>Light</Button>
       <Button variant="dark" shadow={true}>Dark</Button>
       <Button variant="link" shadow={true}>Link</Button>
+    </div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+      <Button variant="primary" shadow={true} disabled={true}>Primary</Button>
+      <Button variant="secondary" shadow={true} disabled={true}>Secondary</Button>
+      <Button variant="success" shadow={true} disabled={true}>Success</Button>
+      <Button variant="danger" shadow={true} disabled={true}>Danger</Button>
+      <Button variant="warning" shadow={true} disabled={true}>Warning</Button>
+      <Button variant="info" shadow={true} disabled={true}>Info</Button>
+      <Button variant="light" shadow={true} disabled={true}>Light</Button>
+      <Button variant="dark" shadow={true} disabled={true}>Dark</Button>
+      <Button variant="link" shadow={true} disabled={true}>Link</Button>
+    </div>
     </div>
   ),
   parameters: {
