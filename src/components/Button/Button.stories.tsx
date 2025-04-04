@@ -32,28 +32,22 @@ const meta: Meta<typeof Button> = {
       },
     },
     outline: {
-      control: { type: 'boolean' },
-      defaultValue: false,
+      control: { type: 'boolean' }
     },
     square: {
-      control: { type: 'boolean' },
-      defaultValue: false,
+      control: { type: 'boolean' }
     },
     pill: {
-      control: { type: 'boolean' },
-      defaultValue: false,
+      control: { type: 'boolean' }
     },
     shadow: {
-      control: { type: 'boolean' },
-      defaultValue: false,
+      control: { type: 'boolean' }
     },
     disabled: {
-      control: { type: 'boolean' },
-      defaultValue: false,
+      control: { type: 'boolean' }
     },
     block: {
-      control: { type: 'boolean' },
-      defaultValue: false,
+      control: { type: 'boolean' }
     },
   },
 };
