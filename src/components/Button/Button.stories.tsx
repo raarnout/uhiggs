@@ -296,6 +296,22 @@ export const buttonIcon: Story = {
       <Button iconEnd="arrow-right"></Button>
       <Button iconStart="arrow-left" iconEnd="arrow-right"></Button>
     </div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+      <Button square={true} iconStart="arrow-left">Left</Button>
+      <Button square={true} iconEnd="arrow-right">Right</Button>
+      <Button square={true} iconStart="arrow-left" iconEnd="arrow-right">Left and Right</Button>
+      <Button square={true} iconStart="arrow-left"></Button>
+      <Button square={true} iconEnd="arrow-right"></Button>
+      <Button square={true} iconStart="arrow-left" iconEnd="arrow-right"></Button>
+    </div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+      <Button pill={true} iconStart="arrow-left">Left</Button>
+      <Button pill={true} iconEnd="arrow-right">Right</Button>
+      <Button pill={true} iconStart="arrow-left" iconEnd="arrow-right">Left and Right</Button>
+      <Button pill={true} iconStart="arrow-left"></Button>
+      <Button pill={true} iconEnd="arrow-right"></Button>
+      <Button pill={true} iconStart="arrow-left" iconEnd="arrow-right"></Button>
+    </div>
     <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap'}}>
       <Button size='lg' iconStart="arrow-left">Left</Button>
       <Button size='lg' iconEnd="arrow-right">Right</Button>
