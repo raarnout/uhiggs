@@ -1,125 +1,87 @@
-# UHiggs Component Library
+# UHiggs
 
-A modern, lightweight React component library designed to provide high-quality, reusable UI components for your React applications.
+A comprehensive React component library built on top of Bootstrap 5, providing enhanced, accessible, and fully customizable UI components.
 
-## Features
+## Overview
 
-- 🎨 Modern and clean design
-- ⚡ Lightweight and performant
-- 🛠 Built with TypeScript for type safety
-- 📦 Easy to install and use
-- 🎯 Fully customizable
-- 📱 Responsive components
+UHiggs extends Bootstrap 5's component library with additional features, improved accessibility, and TypeScript support. It's designed to provide a robust foundation for building modern web applications while maintaining Bootstrap's familiar design language.
+
+## Key Features
+
+- 🎯 **100% Test Coverage**: Every component is thoroughly tested with Jest and React Testing Library
+- ♿ **Accessibility First**: WCAG 2.1 compliant components with built-in ARIA support
+- 🛠 **TypeScript Support**: Full type safety and autocompletion
+- 🎨 **Bootstrap 5 Integration**: Seamless integration with Bootstrap 5's design system
+- 📚 **Comprehensive Documentation**: Detailed Storybook documentation with examples
+- 🧪 **Quality Assurance**: Strict linting and formatting rules
+- 🔍 **Accessibility Testing**: Automated a11y testing with jest-axe
+
+## Prerequisites
+
+Before installing UHiggs, ensure you have the following peer dependencies installed:
+
+```bash
+npm install bootstrap@^5.3.4 bootstrap-icons@^1.11.3 react@^18.0.0 react-dom@^18.0.0
+```
 
 ## Installation
 
 ```bash
 npm install uhiggs
-# or
-yarn add uhiggs
 ```
 
 ## Usage
 
 ```jsx
 import { Button } from 'uhiggs';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
-    <Button variant="primary" onClick={() => console.log('clicked')}>
+    <Button variant="primary" onClick={() => console.log('Clicked!')}>
       Click me
     </Button>
   );
 }
 ```
 
-## Components
-
-### Button
-
-A customizable button component with Bootstrap styling.
-
-#### Props
-
-| Prop     | Type      | Default   | Description                                                                            |
-| -------- | --------- | --------- | -------------------------------------------------------------------------------------- |
-| variant  | string    | 'primary' | Button style variant (primary, secondary, success, danger, warning, info, light, dark) |
-| size     | string    | -         | Button size (sm, lg)                                                                   |
-| outline  | boolean   | false     | Use outline style                                                                      |
-| disabled | boolean   | false     | Disable button                                                                         |
-| block    | boolean   | false     | Full width button                                                                      |
-| square   | boolean   | false     | Square corners                                                                         |
-| pill     | boolean   | false     | Pill shaped button                                                                     |
-| shadow   | boolean   | false     | Add shadow effect                                                                      |
-| onClick  | function  | -         | Click handler                                                                          |
-| children | ReactNode | -         | Button content                                                                         |
-
-#### Examples
-
-```jsx
-// Basic button
-<Button variant="primary">Click me</Button>
-
-// Outline button
-<Button variant="primary" outline>Click me</Button>
-
-// Disabled button
-<Button variant="primary" disabled>Click me</Button>
-
-// Full width button
-<Button variant="primary" block>Click me</Button>
-
-// Square button
-<Button variant="primary" square>Click me</Button>
-
-// Pill button
-<Button variant="primary" pill>Click me</Button>
-
-// Button with shadow
-<Button variant="primary" shadow>Click me</Button>
-
-// Small button
-<Button variant="primary" size="sm">Click me</Button>
-
-// Large button
-<Button variant="primary" size="lg">Click me</Button>
-```
-
 ## Development
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
 
 ### Setup
 
 1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-git clone git@github.com:raarnout/uhiggs.git
-cd uhiggs
-```
+### Available Scripts
 
-2. Install dependencies
+- `npm run build` - Build the library
+- `npm run storybook` - Start Storybook documentation
+- `npm run build-storybook` - Build static Storybook documentation
+- `npm run format` - Format code with Prettier
+- `npm test` - Run tests with coverage
+- `npm run lint` - Run ESLint
 
-```bash
-npm install
-# or
-yarn install
-```
+### Testing
 
-3. Start Storybook
+The library maintains 100% test coverage using:
 
-```bash
-npm run storybook
-# or
-yarn storybook
-```
+- Jest for testing
+- React Testing Library for component testing
+- jest-axe for accessibility testing
+- User Event for interaction testing
 
 ## Contributing
 
-We welcome contributions! Please feel free to submit a Pull Request.
+We welcome contributions! Please read our contributing guidelines before submitting pull requests. All components must:
+
+- Have 100% test coverage
+- Pass accessibility tests
+- Include comprehensive documentation
+- Follow our coding standards
 
 ## License
 
@@ -127,4 +89,4 @@ ISC
 
 ## Support
 
-If you encounter any issues or have questions, please file an issue on our GitHub repository.
+For support, feature requests, or bug reports, please open an issue on our GitHub repository.
