@@ -17,8 +17,9 @@
 }     
 
 .btn-icon-wrapper {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
