@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1743771918025" clover="3.2.0">
-  <project timestamp="1743771918025" name="All files">
+<coverage generated="1744539143230" clover="3.2.0">
+  <project timestamp="1744539143230" name="All files">
     <metrics statements="6" coveredstatements="6" conditionals="27" coveredconditionals="27" methods="1" coveredmethods="1" elements="34" coveredelements="34" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="Button.tsx" path="/Users/ronaldaarnoutse/git/uhiggs/src/components/Button/Button.tsx">
       <metrics statements="6" coveredstatements="6" conditionals="27" coveredconditionals="27" methods="1" coveredmethods="1"/>
